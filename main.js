@@ -5,15 +5,11 @@ let word;
 enter.addEventListener('click', getValueToDecode);
 
 function getValueToDecode() {
-   word = document.getElementById("wordToCipher").value;
-    console.log(word);
+    word = document.getElementById("wordToCipher").value;
     caesar(word)
 }
 
-
 function caesar(word) {
-    // let word = document.getElementById("wordToCipher").value;
-
     if (word.match("[a-zA-Z]" || word.length !== 0)) {
         const alph = "abcdefghijklmnopqrstuvwxyz";
         const alphabet = alph.split("");
@@ -31,10 +27,8 @@ function caesar(word) {
                 ciphercode[i] = alphabet[newIndex % 26].toUpperCase();
             }
         }
-        // return ciphercode.join("");
         decodedValue.innerHTML = ciphercode.join("");
-    }
-    else {
+    } else {
         decodedValue.innerHTML = "Enter string of characters";
     }
 }

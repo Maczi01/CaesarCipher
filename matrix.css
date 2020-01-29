@@ -51,7 +51,7 @@ span {
 @media (max-width: 640px) {
     .control__window {
         margin: 0 auto;
-/*padding: 20px;*/
+        /*padding: 20px;*/
         width: 80%;
         display: block;
         height: 80%;
